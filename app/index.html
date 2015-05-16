@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title> Angular Test Project </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <style type="text/css">
+        .Test{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body >
+    <div data-ng-controller="AppCtrl as vm">
+        <input mc-back-test type="text" ng-model="vm.Test"/>
+
+    	<mc-my-list data="vm.Data" show-search="true" on-Save="vm.Save(myParam)"/>
+
+    </div>
+</body>
+
+</html>
